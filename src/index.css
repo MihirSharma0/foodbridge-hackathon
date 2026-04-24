@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FoodBridge Design System
+   Theme: "Earth & Warmth"
+   - Deep emerald green → sustainability & trust
+   - Warm amber/orange → urgency & action
+   - Cream / off-white → clean modern UI
+*/
+
+@layer base {
+  :root {
+    /* Cream/off-white backgrounds */
+    --background: 40 33% 98%;
+    --foreground: 150 30% 10%;
+
+    /* Cards - slightly warmer white */
+    --card: 40 30% 99%;
+    --card-foreground: 150 30% 10%;
+
+    --popover: 40 30% 99%;
+    --popover-foreground: 150 30% 10%;
+
+    /* Primary - Deep Emerald Green */
+    --primary: 152 60% 28%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary - Light sage */
+    --secondary: 150 25% 92%;
+    --secondary-foreground: 152 60% 25%;
+
+    /* Muted - Soft cream */
+    --muted: 40 20% 94%;
+    --muted-foreground: 150 15% 40%;
+
+    /* Accent - Warm Amber/Orange */
+    --accent: 30 90% 55%;
+    --accent-foreground: 40 33% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 33% 98%;
+
+    /* Borders */
+    --border: 150 15% 85%;
+    --input: 150 15% 85%;
+    --ring: 152 60% 35%;
+
+    --radius: 1rem;
+
+    /* Custom tokens */
+    --emerald: 152 60% 28%;
+    --emerald-light: 152 45% 45%;
+    --emerald-dark: 152 70% 18%;
+    --amber: 30 90% 55%;
+    --amber-light: 35 95% 65%;
+    --amber-dark: 25 85% 45%;
+    --cream: 40 33% 98%;
+    --cream-dark: 40 25% 92%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(152 60% 28%) 0%, hsl(150 50% 35%) 50%, hsl(30 90% 55%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(40 30% 99%) 0%, hsl(40 25% 96%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(30 90% 55%) 0%, hsl(35 95% 60%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(150 30% 10% / 0.08);
+    --shadow-glow-emerald: 0 0 40px -10px hsl(152 60% 35% / 0.3);
+    --shadow-glow-amber: 0 0 40px -10px hsl(30 90% 55% / 0.4);
+
+    /* Sidebar */
+    --sidebar-background: 150 20% 97%;
+    --sidebar-foreground: 150 30% 20%;
+    --sidebar-primary: 152 60% 28%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 150 25% 92%;
+    --sidebar-accent-foreground: 152 60% 25%;
+    --sidebar-border: 150 15% 88%;
+    --sidebar-ring: 152 60% 35%;
+  }
+
+  .dark {
+    --background: 150 30% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 150 25% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 150 25% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 152 60% 55%;
+    --primary-foreground: 150 30% 5%;
+
+    --secondary: 150 20% 18%;
+    --secondary-foreground: 152 45% 55%;
+
+    --muted: 150 15% 18%;
+    --muted-foreground: 150 15% 85%;
+
+    --accent: 30 85% 55%;
+    --accent-foreground: 150 30% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 40 25% 95%;
+
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 152 55% 45%;
+
+    --emerald: 152 55% 45%;
+    --emerald-light: 152 50% 55%;
+    --emerald-dark: 152 60% 35%;
+    --amber: 30 85% 55%;
+    --amber-light: 35 90% 65%;
+    --amber-dark: 25 80% 45%;
+    --cream: 150 30% 8%;
+    --cream-dark: 150 25% 12%;
+
+    --sidebar-background: 150 25% 10%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 152 55% 45%;
+    --sidebar-primary-foreground: 150 30% 8%;
+    --sidebar-accent: 150 20% 16%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 150 15% 18%;
+    --sidebar-ring: 152 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/70 dark:bg-black/60 backdrop-blur-xl border border-white/20 dark:border-white/20 shadow-lg;
+  }
+
+  .glass-dark {
+    @apply bg-black/30 backdrop-blur-xl border border-white/10;
+  }
+
+  /* Bento card styling */
+  .bento-card {
+    @apply rounded-3xl bg-card p-6 shadow-sm border border-border/50 transition-all duration-300;
+  }
+
+  .bento-card:hover {
+    @apply shadow-md -translate-y-1;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  /* Glow effects */
+  .glow-emerald {
+    box-shadow: var(--shadow-glow-emerald);
+  }
+
+  .glow-amber {
+    box-shadow: var(--shadow-glow-amber);
+  }
+
+  /* Status indicators */
+  .status-available {
+    @apply bg-emerald text-white;
+  }
+
+  .status-requested {
+    @apply bg-amber text-white;
+  }
+
+  .status-collected {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  /* Veg/Non-veg indicators */
+  .veg-indicator {
+    @apply w-3 h-3 rounded-full bg-green-500 border-2 border-green-600;
+  }
+
+  .nonveg-indicator {
+    @apply w-3 h-3 rounded-full bg-red-500 border-2 border-red-600;
+  }
+}
+
+@layer utilities {
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

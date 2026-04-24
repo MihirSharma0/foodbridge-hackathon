@@ -1,0 +1,75 @@
+FOODBRIDGE - PROJECT FEATURES LIST FOR VIDEO
+===========================================
+
+1. MODERN BRANDING & UI/UX
+--------------------------
+- Custom "FoodBridge" Identity: Full branding overhaul including logo, favicon, and project metadata.
+- Premium Design System: Sleek glassmorphism effects, cream/sage color palette, and smooth micro-animations.
+- Full Dark Mode Support: Intelligent theme switching with optimized contrast for readability.
+- Responsive Layout: Seamless experience across mobile, tablet, and desktop devices.
+
+2. ADVANCED AUTHENTICATION SYSTEM
+-------------------------------
+- Flexible Sign-In: Login using either Email Address or Username.
+- Multi-Provider Auth: Integrated Google Social Login alongside traditional Email/Password.
+- Specialized User Roles: Dedicated onboarding flows and dashboards for both 'Donors' and 'NGOs'.
+- Simplified Onboarding: Streamlined account creation with manual email verification removed for instant access.
+
+3. SECURITY & ACCOUNT RECOVERY
+----------------------------
+- Multi-Step Account Recovery: Custom password reset wizard using Security Questions (e.g., first pet, birthplace).
+- Identity Verification: Real-time verification of security answers before allowing password resets.
+- Secure Management: In-app password change functionality with mandatory current password re-authentication.
+- Account Deletion: Complete data removal feature for user privacy and control.
+
+4. USER ONBOARDING & PROFILES
+---------------------------
+- Dynamic Profile Completion: Post-signup step to collect essential data like Company Name and Phone Number.
+- Role-Based Information: Tailored fields based on whether the user is a Restaurant/Store (Donor) or a Charity (NGO).
+- Profile Management: Editable user details and profile picture support.
+
+5. CORE DONATION ECOSYSTEM (DEEP DIVE)
+--------------------------------------
+- DONOR CAPABILITIES:
+    * Multi-Item Posting: Add multiple food items in one go (e.g., "5 kg Rice" + "2 kg Dal" in one post).
+    * Food Preference Indicators: Clear color-coding for Vegetarian (Green) and Non-Vegetarian (Red) items.
+    * Real-Time Expiry Control: Set precise pickup deadlines; system alerts users when food is near expiry.
+    * Contact Management: Provide specific contact names and numbers for smooth coordination.
+    * Dashboard Cleanup: Delete "Collected" or "Cancelled" posts to maintain a clean workspace.
+
+- NGO CAPABILITIES:
+    * Discovery Board: Instant view of all available surplus food in the local area.
+    * Detailed Cards: Visual breakdown of item quantities, weights, and donor location.
+    * One-Click Request: Instantly reserve food items for collection.
+    * Smart Cancellation: 15-minute "thinking period" to cancel a request if logistics don't work out.
+    * Interactive Buttons: Buttons transform to show live countdown timers for the cancellation window.
+
+- LOGISTICS & SAFETY:
+    * Condition Indicators: Visual cues for "Safe for pickup" vs "Expiring soon".
+    * Status Transparency: Real-time status badges like "Available", "Requested", "Collected", and "Cancelled".
+    * Coordination: Direct access to Donor contact details once a request is made.
+
+6. DEMO & ACCESSIBILITY
+---------------------
+- Ready-to-Use Demo Accounts: Pre-configured accounts (donor1, donor2, ngo1, ngo2) for instant feature testing.
+- Pre-filled Forms: Smart redirection and field pre-filling (e.g., email pre-filled after password reset).
+- Toast Notifications: Real-time visual feedback for every user action (success, error, loading).
+
+7. FUTURE ROADMAP
+-----------------
+- AI Integration & Route Optimization: Predictive ML models for waste reduction and smart logistics.
+- Real-Time GPS Tracking: Live location sharing for seamless food pickups and delivery coordination.
+- Dedicated Mobile Application: Native iOS/Android apps for instant push notifications and on-the-go management.
+- Institutional Partnerships: Integration with Government and municipal food safety systems for systemic impact.
+
+SUGGESTED VIDEO FLOW (UPDATED):
+1. Landing Page: Show branding and theme toggle (Light/Dark).
+2. Signup/Profile: Create a Donor account, set a security question.
+3. Donating: Post a mixed donation (Veg + Non-Veg) with multiple items.
+4. NGO Interaction: Switch to an NGO account, browse the board, and request the donation.
+5. Verification: Show the 15-min cancellation timer on the NGO's dashboard.
+6. Recovery: Demonstrate the "Forgot Password" flow via Security Question.
+7. Roadmap & Conclusion: Show the PPT slide on future plans (AI, GPS, App, Gov) and wrap up.
+
+
+End of Presentation...

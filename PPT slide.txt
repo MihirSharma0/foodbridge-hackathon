@@ -1,0 +1,49 @@
+SLIDE 1: TITLE PAGE
+- Project Title: FoodBridge
+- Tagline: Bridging the Gap Between Surplus and Success
+- Purpose: A Real-time Strategic Food Redistribution Platform
+- Team Name: EcoLogic Devs
+- Presenters: Mihir Sharma, Md Irfan, Parijat Das, Syed Qasim
+- Theme: Sustainability, Social Impact, and Environment
+
+SLIDE 2: PROBLEM STATEMENT
+- The Paradox: Millions of tons of edible food are discarded daily by restaurants and grocery stores, while local communities face severe food insecurity.
+- The Logistics Gap: Small-to-medium donors lack a low-friction, real-time method to notify nearby NGOs about surplus availability.
+- The Reality: Fresh, cooked food has a narrow window of safety; without an instant connection, it inevitably ends up in landfills.
+- Core Issue: Lack of specialized, reliable, and real-time connective tissue in the local food donation ecosystem.
+
+SLIDE 3: PROPOSED SOLUTION
+- Solution: FoodBridge - A dedicated web application serving as a digital connective tissue for instant food redistribution.
+- Instant Matchmaking: Donors post surplus items (quantity, type, expiry) in under 30 seconds; local NGOs receive instant updates.
+- Streamlined Onboarding: Specialized digital dashboards for Donors (Restaurants/Stores) and NGOs (Charities/Community Centers) ensures role-specific workflows.
+- Low Friction: Modern web-app design prioritizing speed and reliability to maximize the volume of rescued food.
+
+SLIDE 4: KEY PRODUCT FEATURES
+- Multiple Item Support: Donors can group different food types in a single post with individual quantity tracking.
+- Visual Dietary Indicators: Green/Red coding for Vegetarian and Non-Vegetarian items to ensure religious and dietary sensitivity.
+- Real-Time Expiry Management: Visual badges alert NGOs to "Safe for Pickup" vs. "Expiring Soon" windows.
+- Smart Safety Features: 15-minute cancellation window with live countdown timers to prevent logistics planning errors.
+- Identity Trust: Role-based contact sharing once a donation is claimed to facilitate secure coordination.
+
+SLIDE 5: TECHNICAL APPROACH
+- Frontend Architecture: Built with React.js and TypeScript for a type-safe, high-performance user experience.
+- Styling: Tailwind CSS & Framer Motion utilized for a state-of-the-art, responsive glassmorphism UI.
+- Backend & Real-time Data: Firebase Cloud Firestore for instantaneous data synchronization across users.
+- Secure Authentication: Firebase Auth integrated with custom Firestore-based password recovery via security questions for higher reliability.
+- State Management: Context API for seamless data flow between dashboards and core donation logic.
+
+SLIDE 6: FEASIBILITY & REAL-WORLD IMPACT
+- Low-Cost Scalability: Cloud-native serverless architecture allows the platform to scale from a single neighborhood to an entire city with minimal overhead.
+- Environmental Benefit: Measurable reduction in methane emissions by diverting organic waste from local landfills.
+- Social Benefit: Strengthening local community ties and directly supporting hungry populations via established NGO networks.
+- Economic Advantage: Potential tax-deduction tracking for restaurant donors and reduced procurement costs for NGOs.
+
+SLIDE 7: VISION & CONCLUSION
+- The Future Roadmap:
+    * AI Integration & Route Optimization: Predictive ML models for waste reduction and smart logistics.
+    * Real-Time GPS Tracking: Live location sharing for seamless food pickups.
+    * Dedicated Mobile Application: Native iOS/Android apps for instant push notifications and on-the-go management.
+    * Institutional Partnerships: Integration with Government and municipal food safety systems for city-wide impact.
+- Summary: FoodBridge isn't just a database; it's a movement towards a zero-waste society.
+- Call to Action: Help us turn surplus food into a community asset.
+- Closing: "Connecting those who have too much with those who have too little."
