@@ -19,6 +19,13 @@ app.use('/api/donations', donationRoutes);
 // Health check
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
+// Serve static frontend files in production
+const path = require('path');
+app.use(express.static(path.join(__dirname, '../dist')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
+
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
