@@ -58,14 +58,18 @@ export const DonationProvider: React.FC<{ children: ReactNode }> = ({ children }
   const fetchDonations = useCallback(async () => {
     try {
       const response = await axios.get(`${API_URL}/donations`);
-      const donationData = response.data.map((d: any) => ({
-        ...d,
-        id: d._id,
-        expiryTime: new Date(d.expiryTime),
-        createdAt: new Date(d.createdAt),
-        requestedAt: d.requestedAt ? new Date(d.requestedAt) : undefined
-      }));
-      setDonations(donationData);
+      if (Array.isArray(response.data)) {
+        const donationData = response.data.map((d: any) => ({
+          ...d,
+          id: d._id,
+          expiryTime: new Date(d.expiryTime),
+          createdAt: new Date(d.createdAt),
+          requestedAt: d.requestedAt ? new Date(d.requestedAt) : undefined
+        }));
+        setDonations(donationData);
+      } else {
+        console.error('Expected array for donations, but received:', response.data);
+      }
     } catch (error) {
       console.error('Failed to fetch donations:', error);
     }
